@@ -1,0 +1,91 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Jul 31 19:22:07 2020
+| Host         : DESKTOP-GNL9F3S running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Lab_13_control_sets_placed.rpt
+| Design       : Lab_13
+| Device       : xc7s15
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    19 |
+| Unused register locations in slices containing registers |    65 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            3 |
+|      2 |            1 |
+|      4 |            1 |
+|      5 |            1 |
+|      8 |            1 |
+|     10 |            1 |
+|     12 |            3 |
+|     15 |            1 |
+|    16+ |            7 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             200 |           59 |
+| No           | No                    | Yes                    |               7 |            3 |
+| No           | Yes                   | No                     |             111 |           34 |
+| Yes          | No                    | No                     |             105 |           36 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------------------------+---------------------------------------------------+-------------------------------------------------------------------------------+------------------+----------------+
+|                       Clock Signal                       |                   Enable Signal                   |                                Set/Reset Signal                               | Slice Load Count | Bel Load Count |
++----------------------------------------------------------+---------------------------------------------------+-------------------------------------------------------------------------------+------------------+----------------+
+|  clk_10/inst/clk_out3                                    | Driver_DAC0/DAC_Sync_i_1_n_0                      |                                                                               |                1 |              1 |
+|  clk_10/inst/clk_out3                                    | Driver_DAC0/p_0_in_0                              |                                                                               |                1 |              1 |
+|  Signal_Pulse                                            |                                                   | Driver_ADC0/Freq_Cal0/Delta_Clear_Flag                                        |                1 |              1 |
+|  clk_10/inst/clk_out1                                    |                                                   | rgb2dvi/U0/ClockGenInternal.ClockGenX/in0                                     |                1 |              2 |
+|  clk_10/inst/clk_out1                                    |                                                   | rgb2dvi/U0/ClockGenInternal.ClockGenX/LockLostReset/SyncAsyncx/oSyncStages[1] |                1 |              4 |
+|  clk_10/inst/clk_out3                                    |                                                   | Driver_DAC0/DAC_Cnt[4]_i_1_n_0                                                |                2 |              5 |
+|  Driver_DAC0/DDS_Addr_Generator/Clk_Division_01/inst/Clk |                                                   |                                                                               |                2 |              8 |
+|  clk_10/inst/clk_out1                                    |                                                   | rgb2dvi/U0/DataEncoders[0].DataEncoder/pDataOutRaw[9]_i_1__1_n_0              |                3 |             10 |
+|  clk_10/inst/clk_out1                                    | Driver_HDMI0/VSync_Cnt0                           |                                                                               |                3 |             12 |
+|  clk_10/inst/clk_out1                                    | Driver_HDMI0/Set_Y[11]_i_1_n_0                    |                                                                               |                4 |             12 |
+|  clk_10/inst/clk_out1                                    | Driver_HDMI0/p_0_in                               |                                                                               |                4 |             12 |
+|  Signal_Pulse                                            | Driver_ADC0/Freq_Cal0/Period[14]_i_1_n_0          |                                                                               |                8 |             15 |
+|  Driver_ADC0/Clk_Division_ADC/inst/Clk                   |                                                   |                                                                               |                3 |             16 |
+|  clk_10/inst/clk_out1                                    |                                                   | rgb2dvi/U0/DataEncoders[0].DataEncoder/SR[0]                                  |               13 |             32 |
+|  clk_10/inst/clk_out2                                    |                                                   | Driver_ADC0/Clk_Division_ADC/inst/Count[0]_i_1_n_0                            |                8 |             32 |
+|  clk_10/inst/clk_out2                                    |                                                   | Driver_DAC0/DDS_Addr_Generator/Clk_Division_01/inst/Count[0]_i_1_n_0          |                8 |             32 |
+|  clk_10/inst/clk_out2                                    |                                                   |                                                                               |               11 |             35 |
+|  Signal_Pulse                                            | Driver_ADC0/Freq_Cal0/Measure_Num_Cnt[19]_i_1_n_0 |                                                                               |               15 |             52 |
+|  clk_10/inst/clk_out1                                    |                                                   |                                                                               |               43 |            141 |
++----------------------------------------------------------+---------------------------------------------------+-------------------------------------------------------------------------------+------------------+----------------+
+
+

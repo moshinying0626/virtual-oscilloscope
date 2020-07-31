@@ -1,0 +1,125 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Jul 27 20:13:32 2020
+# Process ID: 16712
+# Current directory: C:/project_13
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent520 C:\project_13\project_13.xpr
+# Log file: C:/project_13/vivado.log
+# Journal file: C:/project_13\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/project_13/project_13.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/”¶”ÓÃŒ/Desktop/project_13' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'C:/SEA-Tutorial/IP_Core/RGB2DVI_IP'; using path 'C:/Users/”¶”ÓÃŒ/Desktop/SEA-Tutorial/IP_Core/RGB2DVI_IP' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vivado/fenpinqi final'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/”¶”ÓÃŒ/Desktop/SEA-Tutorial/IP_Core/RGB2DVI_IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:33 ; elapsed = 00:00:15 . Memory (MB): peak = 816.391 ; gain = 232.348
+update_compile_order -fileset sources_1
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name Rom_Sin -dir c:/project_13/project_13.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {Rom_Sin} CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Write_Width_A {8} CONFIG.Write_Depth_A {256} CONFIG.Read_Width_A {8} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8} CONFIG.Load_Init_File {true} CONFIG.Coe_File {D:/vivado/shiboqi/Matlab_Lab/Sin_Wave_Rom.coe} CONFIG.Port_A_Write_Rate {0}] [get_ips Rom_Sin]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'Rom_Sin' to 'Rom_Sin' is not allowed and is ignored.
+generate_target {instantiation_template} [get_files c:/project_13/project_13.srcs/sources_1/ip/Rom_Sin/Rom_Sin.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'Rom_Sin'...
+generate_target all [get_files  c:/project_13/project_13.srcs/sources_1/ip/Rom_Sin/Rom_Sin.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Rom_Sin'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Rom_Sin'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'Rom_Sin'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'Rom_Sin'...
+catch { config_ip_cache -export [get_ips -all Rom_Sin] }
+export_ip_user_files -of_objects [get_files c:/project_13/project_13.srcs/sources_1/ip/Rom_Sin/Rom_Sin.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/project_13/project_13.srcs/sources_1/ip/Rom_Sin/Rom_Sin.xci]
+launch_runs -jobs 4 Rom_Sin_synth_1
+[Mon Jul 27 20:15:26 2020] Launched Rom_Sin_synth_1...
+Run output will be captured here: C:/project_13/project_13.runs/Rom_Sin_synth_1/runme.log
+export_simulation -of_objects [get_files c:/project_13/project_13.srcs/sources_1/ip/Rom_Sin/Rom_Sin.xci] -directory C:/project_13/project_13.ip_user_files/sim_scripts -ip_user_files_dir C:/project_13/project_13.ip_user_files -ipstatic_source_dir C:/project_13/project_13.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/project_13/project_13.cache/compile_simlib/modelsim} {questa=C:/project_13/project_13.cache/compile_simlib/questa} {riviera=C:/project_13/project_13.cache/compile_simlib/riviera} {activehdl=C:/project_13/project_13.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name Rom_Square -dir c:/project_13/project_13.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {Rom_Square} CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Write_Width_A {8} CONFIG.Write_Depth_A {256} CONFIG.Read_Width_A {8} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8} CONFIG.Load_Init_File {true} CONFIG.Coe_File {D:/vivado/shiboqi/Matlab_Lab/Square_Wave_Rom.coe} CONFIG.Port_A_Write_Rate {0}] [get_ips Rom_Square]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'Rom_Square' to 'Rom_Square' is not allowed and is ignored.
+generate_target {instantiation_template} [get_files c:/project_13/project_13.srcs/sources_1/ip/Rom_Square/Rom_Square.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'Rom_Square'...
+generate_target all [get_files  c:/project_13/project_13.srcs/sources_1/ip/Rom_Square/Rom_Square.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Rom_Square'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Rom_Square'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'Rom_Square'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'Rom_Square'...
+catch { config_ip_cache -export [get_ips -all Rom_Square] }
+export_ip_user_files -of_objects [get_files c:/project_13/project_13.srcs/sources_1/ip/Rom_Square/Rom_Square.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/project_13/project_13.srcs/sources_1/ip/Rom_Square/Rom_Square.xci]
+launch_runs -jobs 4 Rom_Square_synth_1
+[Mon Jul 27 20:16:47 2020] Launched Rom_Square_synth_1...
+Run output will be captured here: C:/project_13/project_13.runs/Rom_Square_synth_1/runme.log
+export_simulation -of_objects [get_files c:/project_13/project_13.srcs/sources_1/ip/Rom_Square/Rom_Square.xci] -directory C:/project_13/project_13.ip_user_files/sim_scripts -ip_user_files_dir C:/project_13/project_13.ip_user_files -ipstatic_source_dir C:/project_13/project_13.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/project_13/project_13.cache/compile_simlib/modelsim} {questa=C:/project_13/project_13.cache/compile_simlib/questa} {riviera=C:/project_13/project_13.cache/compile_simlib/riviera} {activehdl=C:/project_13/project_13.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name Rom_Triangle -dir c:/project_13/project_13.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {Rom_Triangle} CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Write_Width_A {8} CONFIG.Write_Depth_A {256} CONFIG.Read_Width_A {8} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8} CONFIG.Load_Init_File {true} CONFIG.Coe_File {D:/vivado/shiboqi/Matlab_Lab/Triangle_Wave_Rom.coe} CONFIG.Port_A_Write_Rate {0}] [get_ips Rom_Triangle]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'Rom_Triangle' to 'Rom_Triangle' is not allowed and is ignored.
+generate_target {instantiation_template} [get_files c:/project_13/project_13.srcs/sources_1/ip/Rom_Triangle/Rom_Triangle.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'Rom_Triangle'...
+update_compile_order -fileset sources_1
+generate_target all [get_files  c:/project_13/project_13.srcs/sources_1/ip/Rom_Triangle/Rom_Triangle.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Rom_Triangle'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Rom_Triangle'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'Rom_Triangle'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'Rom_Triangle'...
+catch { config_ip_cache -export [get_ips -all Rom_Triangle] }
+export_ip_user_files -of_objects [get_files c:/project_13/project_13.srcs/sources_1/ip/Rom_Triangle/Rom_Triangle.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/project_13/project_13.srcs/sources_1/ip/Rom_Triangle/Rom_Triangle.xci]
+launch_runs -jobs 4 Rom_Triangle_synth_1
+[Mon Jul 27 20:17:42 2020] Launched Rom_Triangle_synth_1...
+Run output will be captured here: C:/project_13/project_13.runs/Rom_Triangle_synth_1/runme.log
+export_simulation -of_objects [get_files c:/project_13/project_13.srcs/sources_1/ip/Rom_Triangle/Rom_Triangle.xci] -directory C:/project_13/project_13.ip_user_files/sim_scripts -ip_user_files_dir C:/project_13/project_13.ip_user_files -ipstatic_source_dir C:/project_13/project_13.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/project_13/project_13.cache/compile_simlib/modelsim} {questa=C:/project_13/project_13.cache/compile_simlib/questa} {riviera=C:/project_13/project_13.cache/compile_simlib/riviera} {activehdl=C:/project_13/project_13.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/project_13/project_13.srcs/sim_1/new/TB.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/project_13/project_13.srcs/sim_1/new/TB.v
+file delete -force C:/project_13/project_13.srcs/sim_1/new/TB.v
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Jul 27 20:20:26 2020] Launched synth_1...
+Run output will be captured here: C:/project_13/project_13.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Mon Jul 27 20:21:22 2020] Launched impl_1...
+Run output will be captured here: C:/project_13/project_13.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jul 27 20:23:03 2020] Launched impl_1...
+Run output will be captured here: C:/project_13/project_13.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+set_property PROGRAM.FILE {C:/project_13/project_13.runs/impl_1/Lab_13.bit} [get_hw_devices xc7s15_0]
+current_hw_device [get_hw_devices xc7s15_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0]
+INFO: [Labtools 27-1435] Device xc7s15 (JTAG device index = 0) is not programmed (DONE status = 0).
+create_hw_cfgmem -hw_device [get_hw_devices xc7s15_0] -mem_dev [lindex [get_cfgmem_parts {is25lp016d-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {C:/project_13/project_13.runs/impl_1/Lab_13.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+INFO: [Labtools 27-1434] Device xc7s15 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+close_hw
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 27 20:40:41 2020...

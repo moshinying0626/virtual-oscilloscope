@@ -1,0 +1,105 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 14784
+License: Customer
+
+Current time: 	Mon Jul 27 20:04:22 CST 2020
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 120
+Available screens: 1
+Available disk space: 57 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/vivado/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	D:/vivado/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	”¶”ÓÃŒ
+User home directory: C:/Users/”¶”ÓÃŒ
+User working directory: D:/vivado/project_13
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/vivado/Vivado
+HDI_APPROOT: D:/vivado/Vivado/2018.3
+RDI_DATADIR: D:/vivado/Vivado/2018.3/data
+RDI_BINDIR: D:/vivado/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/”¶”ÓÃŒ/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/”¶”ÓÃŒ/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/”¶”ÓÃŒ/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	D:/vivado/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	D:/vivado/project_13/vivado.log
+Vivado journal file location: 	D:/vivado/project_13/vivado.jou
+Engine tmp dir: 	D:/vivado/project_13/.Xil/Vivado-14784-DESKTOP-GNL9F3S
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/vivado/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: D:/vivado/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: D:/vivado/Vivado/2018.3
+XILINX_SDK: D:/vivado/SDK/2018.3
+XILINX_VIVADO: D:/vivado/Vivado/2018.3
+XILINX_VIVADO_HLS: D:/vivado/Vivado/2018.3
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 626 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 69 MB (+70004kb) [00:00:10]
+// [Engine Memory]: 553 MB (+428145kb) [00:00:10]
+// Opening Vivado Project: D:\vivado\project_13\project_13.xpr. Version: Vivado v2018.3 
+// bx (cp):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project D:/vivado/project_13/project_13.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 669 MB. GUI used memory: 46 MB. Current time: 7/27/20, 8:04:24 PM CST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 709 MB (+134296kb) [00:00:25]
+// [GUI Memory]: 82 MB (+10323kb) [00:00:26]
+// [GUI Memory]: 100 MB (+14525kb) [00:00:27]
+// [Engine Memory]: 749 MB (+5438kb) [00:00:27]
+// WARNING: HEventQueue.dispatchEvent() is taking  6420 ms.
+// Tcl Message: open_project D:/vivado/project_13/project_13.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vivado/fenpinqi final'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/”¶”ÓÃŒ/Desktop/SEA-Tutorial/IP_Core/RGB2DVI_IP'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/Vivado/2018.3/data/ip'. 

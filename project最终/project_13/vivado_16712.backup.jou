@@ -1,0 +1,66 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Jul 27 20:13:32 2020
+# Process ID: 16712
+# Current directory: C:/project_13
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent520 C:\project_13\project_13.xpr
+# Log file: C:/project_13/vivado.log
+# Journal file: C:/project_13\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/project_13/project_13.xpr
+update_compile_order -fileset sources_1
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name Rom_Sin -dir c:/project_13/project_13.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {Rom_Sin} CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Write_Width_A {8} CONFIG.Write_Depth_A {256} CONFIG.Read_Width_A {8} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8} CONFIG.Load_Init_File {true} CONFIG.Coe_File {D:/vivado/shiboqi/Matlab_Lab/Sin_Wave_Rom.coe} CONFIG.Port_A_Write_Rate {0}] [get_ips Rom_Sin]
+generate_target {instantiation_template} [get_files c:/project_13/project_13.srcs/sources_1/ip/Rom_Sin/Rom_Sin.xci]
+generate_target all [get_files  c:/project_13/project_13.srcs/sources_1/ip/Rom_Sin/Rom_Sin.xci]
+catch { config_ip_cache -export [get_ips -all Rom_Sin] }
+export_ip_user_files -of_objects [get_files c:/project_13/project_13.srcs/sources_1/ip/Rom_Sin/Rom_Sin.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/project_13/project_13.srcs/sources_1/ip/Rom_Sin/Rom_Sin.xci]
+launch_runs -jobs 4 Rom_Sin_synth_1
+export_simulation -of_objects [get_files c:/project_13/project_13.srcs/sources_1/ip/Rom_Sin/Rom_Sin.xci] -directory C:/project_13/project_13.ip_user_files/sim_scripts -ip_user_files_dir C:/project_13/project_13.ip_user_files -ipstatic_source_dir C:/project_13/project_13.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/project_13/project_13.cache/compile_simlib/modelsim} {questa=C:/project_13/project_13.cache/compile_simlib/questa} {riviera=C:/project_13/project_13.cache/compile_simlib/riviera} {activehdl=C:/project_13/project_13.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name Rom_Square -dir c:/project_13/project_13.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {Rom_Square} CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Write_Width_A {8} CONFIG.Write_Depth_A {256} CONFIG.Read_Width_A {8} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8} CONFIG.Load_Init_File {true} CONFIG.Coe_File {D:/vivado/shiboqi/Matlab_Lab/Square_Wave_Rom.coe} CONFIG.Port_A_Write_Rate {0}] [get_ips Rom_Square]
+generate_target {instantiation_template} [get_files c:/project_13/project_13.srcs/sources_1/ip/Rom_Square/Rom_Square.xci]
+generate_target all [get_files  c:/project_13/project_13.srcs/sources_1/ip/Rom_Square/Rom_Square.xci]
+catch { config_ip_cache -export [get_ips -all Rom_Square] }
+export_ip_user_files -of_objects [get_files c:/project_13/project_13.srcs/sources_1/ip/Rom_Square/Rom_Square.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/project_13/project_13.srcs/sources_1/ip/Rom_Square/Rom_Square.xci]
+launch_runs -jobs 4 Rom_Square_synth_1
+export_simulation -of_objects [get_files c:/project_13/project_13.srcs/sources_1/ip/Rom_Square/Rom_Square.xci] -directory C:/project_13/project_13.ip_user_files/sim_scripts -ip_user_files_dir C:/project_13/project_13.ip_user_files -ipstatic_source_dir C:/project_13/project_13.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/project_13/project_13.cache/compile_simlib/modelsim} {questa=C:/project_13/project_13.cache/compile_simlib/questa} {riviera=C:/project_13/project_13.cache/compile_simlib/riviera} {activehdl=C:/project_13/project_13.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name Rom_Triangle -dir c:/project_13/project_13.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {Rom_Triangle} CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Write_Width_A {8} CONFIG.Write_Depth_A {256} CONFIG.Read_Width_A {8} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8} CONFIG.Load_Init_File {true} CONFIG.Coe_File {D:/vivado/shiboqi/Matlab_Lab/Triangle_Wave_Rom.coe} CONFIG.Port_A_Write_Rate {0}] [get_ips Rom_Triangle]
+generate_target {instantiation_template} [get_files c:/project_13/project_13.srcs/sources_1/ip/Rom_Triangle/Rom_Triangle.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  c:/project_13/project_13.srcs/sources_1/ip/Rom_Triangle/Rom_Triangle.xci]
+catch { config_ip_cache -export [get_ips -all Rom_Triangle] }
+export_ip_user_files -of_objects [get_files c:/project_13/project_13.srcs/sources_1/ip/Rom_Triangle/Rom_Triangle.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/project_13/project_13.srcs/sources_1/ip/Rom_Triangle/Rom_Triangle.xci]
+launch_runs -jobs 4 Rom_Triangle_synth_1
+export_simulation -of_objects [get_files c:/project_13/project_13.srcs/sources_1/ip/Rom_Triangle/Rom_Triangle.xci] -directory C:/project_13/project_13.ip_user_files/sim_scripts -ip_user_files_dir C:/project_13/project_13.ip_user_files -ipstatic_source_dir C:/project_13/project_13.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/project_13/project_13.cache/compile_simlib/modelsim} {questa=C:/project_13/project_13.cache/compile_simlib/questa} {riviera=C:/project_13/project_13.cache/compile_simlib/riviera} {activehdl=C:/project_13/project_13.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/project_13/project_13.srcs/sim_1/new/TB.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/project_13/project_13.srcs/sim_1/new/TB.v
+file delete -force C:/project_13/project_13.srcs/sim_1/new/TB.v
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/project_13/project_13.runs/impl_1/Lab_13.bit} [get_hw_devices xc7s15_0]
+current_hw_device [get_hw_devices xc7s15_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xc7s15_0] -mem_dev [lindex [get_cfgmem_parts {is25lp016d-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {C:/project_13/project_13.runs/impl_1/Lab_13.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+close_hw
